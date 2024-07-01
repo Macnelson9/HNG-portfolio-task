@@ -26,7 +26,7 @@ function displayCurrentTimeUTC() {
     // Set your Slack profile information here
     slackDisplayNameElement.textContent = 'Uche Ofatu';
     slackEmailElement.textContent = 'michaelofatu@gmail.com';
-    slackProfilePictureElement.src = './img/avatar-uche.svg';
+    slackProfilePictureElement.src = 'avatar-uche.svg';
   }
   
   // Initialize the page with the current time, day, and Slack profile info
