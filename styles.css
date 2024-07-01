@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --color1: #f3eed9;
+  --color2: #824936;
+  --color3: #222c2a;
+}
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color1);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--color2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile h2 {
+  font-family: "Playfair Display", sans-serif;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.profile p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.goals h2,
+.current-info h2,
+footer h2 {
+  font-family: "Playfair Display", sans-serif;
+}
+
+.goals h2,
+.current-info h2,
+footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.goals ul,
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.goals li,
+footer li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.current-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a {
+  color: var(--color3);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile p {
+    font-size: 0.9rem;
+  }
+
+  .goals h2,
+  .current-info h2,
+  footer h2 {
+    font-size: 1.2rem;
+  }
+
+  .goals li,
+  .current-info p,
+  footer li {
+    font-size: 0.9rem;
+  }
+}
